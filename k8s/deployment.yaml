@@ -20,4 +20,5 @@ spec:
           image: slpavaniv/frac-spring-project:63
           ports:
             - containerPort: 8089
-  
+              name: http
+              protocol: TCP
