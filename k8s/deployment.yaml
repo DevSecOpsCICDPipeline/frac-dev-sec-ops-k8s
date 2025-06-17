@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: frac-dev-sec-ops
+   labels:
+     app: frac-dev-sec-ops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frac-dev-sec-ops
+  template: 
+    metadata:
+      name: frac-dev-sec-ops
+      labels:
+        app: frac-dev-sec-ops
+    spec:
+      containers:
+        - name: frac-dev-sec-ops
+          image: slpavaniv/frac-spring-project:63
+          ports:
+            - containerPort: 8089
+  

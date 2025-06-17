@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frac-dev-sec-ops-service
+  labels:
+    app: frac-dev-sec-ops
+spec:
+  selector:
+    app: frac-dev-sec-ops
+  type: NodePort
+  ports:
+    - port: 8089
+      targetPort: 8080
+      nodePort: 30000
+        
+    
