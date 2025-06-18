@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frac-dev-sec-ops
-          image: slpavaniv/frac-spring-project:jenkins-frac-spring-project-78
+          image: slpavaniv/frac-spring-project:jenkins-frac-spring-project-77
           ports:
             - containerPort: 8089
               name: http
